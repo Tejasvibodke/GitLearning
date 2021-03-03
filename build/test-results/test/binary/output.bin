@@ -1,0 +1,22 @@
+`19:49:32.429 - [ShopAPIClient] INFO  : Initiated online_Shop_Controller.ShopAPIClient instance
+-19:49:32.461 - [ApiCaller] INFO  : Request:
+fRequest URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/clearcart/
+Body:			<none>
+.19:49:36.708 - [ApiCaller] INFO  : Response:
+HTTP/1.1 200 
+Cart empty.
+`19:49:38.241 - [ShopAPIClient] INFO  : Initiated online_Shop_Controller.ShopAPIClient instance
+-19:49:38.245 - [ApiCaller] INFO  : Request:
+hRequest URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/ordersummary
+Body:			<none>
+.19:49:38.753 - [ApiCaller] INFO  : Response:
+HTTP/1.1 200 
+{"cart":[],"totalAmount":0}
+`19:49:38.809 - [ShopAPIClient] INFO  : Initiated online_Shop_Controller.ShopAPIClient instance
+-19:49:39.323 - [ApiCaller] INFO  : Request:
+eRequest URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/addtocart
+Body:
+R{"name":"Tejasvi b","currency":"INR","id":"89","amount":"206","totalAmount":0.0}
+.19:49:39.842 - [ApiCaller] INFO  : Response:
+HTTP/1.1 200 
+I{"id":89,"name":"Tejasvi b","amount":206,"quantity":1,"currency":"INR"}
