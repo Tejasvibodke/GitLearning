@@ -2,8 +2,8 @@ package petclinic;
 
 import api.common.ApiResponse;
 import api.common.exception.InvalidResponseException;
-import online_Shop_Controller.ShopAPIClient;
 import online_Shop_Controller.data.Response;
+import online_Shop_Controller.data.ShopAPIClient;
 import org.assertj.core.api.SoftAssertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -31,18 +31,41 @@ public class ShopTest {
 
     }
 
+    @Test //getproductsList
+    public void getProductList() throws Exception {
+
+        ShopAPIClient client = new ShopAPIClient(apiUrl, "/api/shop/getproducts");
+        Response[] cartproducts = client.getProducts_List();
+        SoftAssertions softly = new SoftAssertions();
+        softly.assertAll();
+        System.out.println("Product details at index 2" + cartproducts[2]);
+
+
+    }
+
+    @Test //getproducts
+    public void getProductCount() throws Exception {
+
+        ShopAPIClient client = new ShopAPIClient(apiUrl, "/api/shop/getproducts");
+        int productcount = client.getProductsCount();
+        System.out.println("Total Product count" + productcount);
+
+    }
+
+
+
     //create product
-    @Test
+   @Test
     public void createProduct() throws InvalidResponseException {
         ShopAPIClient client = new ShopAPIClient(apiUrl, "/api/shop/addtocart");
         Response response1 = client.createdProduct(Response.builder()
-                .name("Tejasvi b")
-                .amount("206")
+                .name("Pedigree")
+                .amount("300")
                 .currency("INR")
-                .id("89").build());
+                .id("20").build());
         SoftAssertions softly1 = new SoftAssertions();
-        softly1.assertThat(response1.getName()).isEqualTo("Tejasvi b");
-        softly1.assertThat(response1.getAmount()).isEqualTo("206");
+        softly1.assertThat(response1.getName()).isEqualTo("Pedigree");
+        softly1.assertThat(response1.getAmount()).isEqualTo("300");
         softly1.assertThat(response1.getCurrency()).isEqualTo("INR");
         softly1.assertThat(response1.getId()).isNotBlank();
         softly1.assertThat(response1.getId()).isGreaterThan("1");
@@ -52,14 +75,6 @@ public class ShopTest {
     //Delete Product
     @Test
     public void deleteProduct() throws InvalidResponseException {
-       //create a new product
-        /*ShopAPIClient client = new ShopAPIClient(apiUrl, "/api/shop/addtocart/");
-        Response createdProduct = client.createdProduct(Response.builder()
-                .name("Rani b")
-                .amount("206")
-                .currency("INR")
-                .id("90").build());*/
-        //delete the created product
        ShopAPIClient client1 = new ShopAPIClient(apiUrl, "/api/shop/clearcart/");
         ApiResponse<Response[]> deletedProduct = client1.deleteProduct();
         SoftAssertions softly = new SoftAssertions();
