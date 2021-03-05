@@ -1,4 +1,4 @@
-pre-requisites - download code and do setup from https://github.com/BestBuy/api-playground
+pre-requisites - download code and do setup from https://github.com/Tejasvibodke/GitLearning
 
 Project has 2 sub-modules 
 
