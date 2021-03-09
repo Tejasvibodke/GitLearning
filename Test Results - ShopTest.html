@@ -572,9 +572,9 @@ jQuery.cookie = function(name, value, options) {
     <body>
         <div id="container">
             <div id="header">
-                <div class="time" xmlns="">9.26 s</div>
+                <div class="time" xmlns="">9.57 s</div>
                 <h1>
-                    ShopTest: <strong><span class="total" xmlns="http://www.w3.org/1999/xhtml">3 total, </span><span class="passed">3 passed</span></strong>
+                    ShopTest: <strong><span class="total" xmlns="http://www.w3.org/1999/xhtml">5 total, </span><span class="passed">5 passed</span></strong>
                 </h1>
                 <div id="treecontrol">
                     <ul>
@@ -593,36 +593,56 @@ jQuery.cookie = function(name, value, options) {
                 <ul id="tree">
                     <li xmlns="" class="level top open">
                         <span><em class="time">
-                                <div class="time">9.26 s</div>
+                                <div class="time">9.57 s</div>
                             </em>petclinic.ShopTest</span>
                         <ul>
                             <li class="level test">
                                 <span><em class="time">
-                                        <div class="time">7.29 s</div>
+                                        <div class="time">6.12 s</div>
+                                    </em><em class="status">passed</em>getProductList()</span>
+                                <ul>
+                                    <li class="text">
+                                        <span class="stdout">11:36:40.496 - [ShopAPIClient] INFO  : Initiated online_Shop_Controller.data.ShopAPIClient instance<br/>11:36:40.527 - [ApiCaller] INFO  : Request:<br/>Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/getproducts<br/>Body:			&lt;none&gt;<br/>11:36:43.213 - [ApiCaller] INFO  : Response:<br/>HTTP/1.1 200 <br/>[{&quot;id&quot;:1,&quot;name&quot;:&quot;Kennel Kitchen&quot;,&quot;amount&quot;:635.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;Velcote Liquid&quot;,&quot;amount&quot;:318.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;Pedigree PRO&quot;,&quot;amount&quot;:923.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:4,&quot;name&quot;:&quot;Velcote Premium&quot;,&quot;amount&quot;:318.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:5,&quot;name&quot;:&quot;Mantra Kismis&quot;,&quot;amount&quot;:63.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:6,&quot;name&quot;:&quot;Haldiram Noodles&quot;,&quot;amount&quot;:320.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:7,&quot;name&quot;:&quot;Bingo Mad Angles &quot;,&quot;amount&quot;:912.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:8,&quot;name&quot;:&quot;Bikani Rasogolla&quot;,&quot;amount&quot;:318.00,&quot;currency&quot;:&quot;$&quot;}]<br/>Product details at index 2Response{name=&#39;Pedigree PRO&#39;, currency=&#39;$&#39;, id=&#39;3&#39;, amount=&#39;923.00&#39;}<br/></span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="level test">
+                                <span><em class="time">
+                                        <div class="time">551 ms</div>
+                                    </em><em class="status">passed</em>getProductCount()</span>
+                                <ul>
+                                    <li class="text">
+                                        <span class="stdout">11:36:43.914 - [ShopAPIClient] INFO  : Initiated online_Shop_Controller.data.ShopAPIClient instance<br/>11:36:43.915 - [ApiCaller] INFO  : Request:<br/>Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/getproducts<br/>Body:			&lt;none&gt;<br/>11:36:44.456 - [ApiCaller] INFO  : Response:<br/>HTTP/1.1 200 <br/>[{&quot;id&quot;:1,&quot;name&quot;:&quot;Kennel Kitchen&quot;,&quot;amount&quot;:635.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:2,&quot;name&quot;:&quot;Velcote Liquid&quot;,&quot;amount&quot;:318.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:3,&quot;name&quot;:&quot;Pedigree PRO&quot;,&quot;amount&quot;:923.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:4,&quot;name&quot;:&quot;Velcote Premium&quot;,&quot;amount&quot;:318.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:5,&quot;name&quot;:&quot;Mantra Kismis&quot;,&quot;amount&quot;:63.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:6,&quot;name&quot;:&quot;Haldiram Noodles&quot;,&quot;amount&quot;:320.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:7,&quot;name&quot;:&quot;Bingo Mad Angles &quot;,&quot;amount&quot;:912.00,&quot;currency&quot;:&quot;$&quot;},{&quot;id&quot;:8,&quot;name&quot;:&quot;Bikani Rasogolla&quot;,&quot;amount&quot;:318.00,&quot;currency&quot;:&quot;$&quot;}]<br/>Total Product count8<br/></span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="level test">
+                                <span><em class="time">
+                                        <div class="time">1.59 s</div>
                                     </em><em class="status">passed</em>deleteProduct()</span>
                                 <ul>
                                     <li class="text">
-                                        <span class="stdout">19:49:32.429 - [ShopAPIClient] INFO  : Initiated online_Shop_Controller.ShopAPIClient instance<br/>19:49:32.461 - [ApiCaller] INFO  : Request:<br/>Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/clearcart/<br/>Body:			&lt;none&gt;<br/>19:49:36.708 - [ApiCaller] INFO  : Response:<br/>HTTP/1.1 200 <br/>Cart empty.<br/></span>
+                                        <span class="stdout">11:36:44.469 - [ShopAPIClient] INFO  : Initiated online_Shop_Controller.data.ShopAPIClient instance<br/>11:36:44.469 - [ApiCaller] INFO  : Request:<br/>Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/clearcart/<br/>Body:			&lt;none&gt;<br/>11:36:44.986 - [ApiCaller] INFO  : Response:<br/>HTTP/1.1 200 <br/>Cart empty.<br/></span>
                                     </li>
                                 </ul>
                             </li>
                             <li class="level test">
                                 <span><em class="time">
-                                        <div class="time">565 ms</div>
+                                        <div class="time">516 ms</div>
                                     </em><em class="status">passed</em>getProducts_statuscode()</span>
                                 <ul>
                                     <li class="text">
-                                        <span class="stdout">19:49:38.241 - [ShopAPIClient] INFO  : Initiated online_Shop_Controller.ShopAPIClient instance<br/>19:49:38.245 - [ApiCaller] INFO  : Request:<br/>Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/ordersummary<br/>Body:			&lt;none&gt;<br/>19:49:38.753 - [ApiCaller] INFO  : Response:<br/>HTTP/1.1 200 <br/>{&quot;cart&quot;:[],&quot;totalAmount&quot;:0}<br/></span>
+                                        <span class="stdout">11:36:46.075 - [ShopAPIClient] INFO  : Initiated online_Shop_Controller.data.ShopAPIClient instance<br/>11:36:46.077 - [ApiCaller] INFO  : Request:<br/>Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/ordersummary<br/>Body:			&lt;none&gt;<br/>11:36:46.577 - [ApiCaller] INFO  : Response:<br/>HTTP/1.1 200 <br/>{&quot;cart&quot;:[],&quot;totalAmount&quot;:0}<br/></span>
                                     </li>
                                 </ul>
                             </li>
                             <li class="level test">
                                 <span><em class="time">
-                                        <div class="time">1.40 s</div>
+                                        <div class="time">793 ms</div>
                                     </em><em class="status">passed</em>createProduct()</span>
                                 <ul>
                                     <li class="text">
-                                        <span class="stdout">19:49:38.809 - [ShopAPIClient] INFO  : Initiated online_Shop_Controller.ShopAPIClient instance<br/>19:49:39.323 - [ApiCaller] INFO  : Request:<br/>Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/addtocart<br/>Body:<br/>{&quot;name&quot;:&quot;Tejasvi b&quot;,&quot;currency&quot;:&quot;INR&quot;,&quot;id&quot;:&quot;89&quot;,&quot;amount&quot;:&quot;206&quot;,&quot;totalAmount&quot;:0.0}<br/>19:49:39.842 - [ApiCaller] INFO  : Response:<br/>HTTP/1.1 200 <br/>{&quot;id&quot;:89,&quot;name&quot;:&quot;Tejasvi b&quot;,&quot;amount&quot;:206,&quot;quantity&quot;:1,&quot;currency&quot;:&quot;INR&quot;}<br/></span>
+                                        <span class="stdout">11:36:46.593 - [ShopAPIClient] INFO  : Initiated online_Shop_Controller.data.ShopAPIClient instance<br/>11:36:46.624 - [ApiCaller] INFO  : Request:<br/>Request URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/addtocart<br/>Body:<br/>{&quot;name&quot;:&quot;Pedigree&quot;,&quot;currency&quot;:&quot;INR&quot;,&quot;id&quot;:&quot;20&quot;,&quot;amount&quot;:&quot;300&quot;,&quot;totalAmount&quot;:0.0}<br/>11:36:47.115 - [ApiCaller] INFO  : Response:<br/>HTTP/1.1 200 <br/>{&quot;id&quot;:20,&quot;name&quot;:&quot;Pedigree&quot;,&quot;amount&quot;:300,&quot;quantity&quot;:1,&quot;currency&quot;:&quot;INR&quot;}<br/></span>
                                     </li>
                                 </ul>
                             </li>
@@ -632,7 +652,7 @@ jQuery.cookie = function(name, value, options) {
             </div>
         </div>
         <div id="footer">
-            <p>Generated by IntelliJ IDEA on 03/03/21, 7:51 PM</p>
+            <p>Generated by IntelliJ IDEA on 10/03/21, 11:37 AM</p>
         </div>
     </body>
 </html>
