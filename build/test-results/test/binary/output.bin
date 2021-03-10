@@ -1,22 +1,38 @@
-`19:49:32.429 - [ShopAPIClient] INFO  : Initiated online_Shop_Controller.ShopAPIClient instance
--19:49:32.461 - [ApiCaller] INFO  : Request:
-fRequest URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/clearcart/
+e13:18:22.531 - [ShopAPIClient] INFO  : Initiated online_Shop_Controller.data.ShopAPIClient instance
+-13:18:22.589 - [ApiCaller] INFO  : Request:
+gRequest URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/getproducts
 Body:			<none>
-.19:49:36.708 - [ApiCaller] INFO  : Response:
+.13:18:25.569 - [ApiCaller] INFO  : Response:
 HTTP/1.1 200 
-Cart empty.
-`19:49:38.241 - [ShopAPIClient] INFO  : Initiated online_Shop_Controller.ShopAPIClient instance
--19:49:38.245 - [ApiCaller] INFO  : Request:
-hRequest URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/ordersummary
+‡[{"id":1,"name":"Kennel Kitchen","amount":635.00,"currency":"$"},{"id":2,"name":"Velcote Liquid","amount":318.00,"currency":"$"},{"id":3,"name":"Pedigree PRO","amount":923.00,"currency":"$"},{"id":4,"name":"Velcote Premium","amount":318.00,"currency":"$"},{"id":5,"name":"Mantra Kismis","amount":63.00,"currency":"$"},{"id":6,"name":"Haldiram Noodles","amount":320.00,"currency":"$"},{"id":7,"name":"Bingo Mad Angles ","amount":912.00,"currency":"$"},{"id":8,"name":"Bikani Rasogolla","amount":318.00,"currency":"$"}]
+`Product details at index 2Response{name='Pedigree PRO', currency='$', id='3', amount='923.00'}
+e13:18:26.360 - [ShopAPIClient] INFO  : Initiated online_Shop_Controller.data.ShopAPIClient instance
+-13:18:26.360 - [ApiCaller] INFO  : Request:
+gRequest URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/getproducts
 Body:			<none>
-.19:49:38.753 - [ApiCaller] INFO  : Response:
+.13:18:26.803 - [ApiCaller] INFO  : Response:
 HTTP/1.1 200 
-{"cart":[],"totalAmount":0}
-`19:49:38.809 - [ShopAPIClient] INFO  : Initiated online_Shop_Controller.ShopAPIClient instance
--19:49:39.323 - [ApiCaller] INFO  : Request:
-eRequest URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/addtocart
-Body:
-R{"name":"Tejasvi b","currency":"INR","id":"89","amount":"206","totalAmount":0.0}
-.19:49:39.842 - [ApiCaller] INFO  : Response:
+‡[{"id":1,"name":"Kennel Kitchen","amount":635.00,"currency":"$"},{"id":2,"name":"Velcote Liquid","amount":318.00,"currency":"$"},{"id":3,"name":"Pedigree PRO","amount":923.00,"currency":"$"},{"id":4,"name":"Velcote Premium","amount":318.00,"currency":"$"},{"id":5,"name":"Mantra Kismis","amount":63.00,"currency":"$"},{"id":6,"name":"Haldiram Noodles","amount":320.00,"currency":"$"},{"id":7,"name":"Bingo Mad Angles ","amount":912.00,"currency":"$"},{"id":8,"name":"Bikani Rasogolla","amount":318.00,"currency":"$"}]
+Total Product count8
+e13:18:26.821 - [ShopAPIClient] INFO  : Initiated online_Shop_Controller.data.ShopAPIClient instance
+-13:18:26.821 - [ApiCaller] INFO  : Request:
+fRequest URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/clearcart/
+Body:			<none>
+.13:18:27.287 - [ApiCaller] INFO  : Response:
 HTTP/1.1 200 
-I{"id":89,"name":"Tejasvi b","amount":206,"quantity":1,"currency":"INR"}
+Cart empty.
+e13:18:28.444 - [ShopAPIClient] INFO  : Initiated online_Shop_Controller.data.ShopAPIClient instance
+-13:18:28.445 - [ApiCaller] INFO  : Request:
+hRequest URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/ordersummary
+Body:			<none>
+.13:18:28.880 - [ApiCaller] INFO  : Response:
+HTTP/1.1 200 
+{"cart":[],"totalAmount":0}
+e13:18:28.890 - [ShopAPIClient] INFO  : Initiated online_Shop_Controller.data.ShopAPIClient instance
+-13:18:28.937 - [ApiCaller] INFO  : Request:
+eRequest URI:	http://petclinicapi.e46708b92c054086909b.eastus.aksapp.io/petclinic/api/shop/addtocart
+Body:
+Q{"name":"Pedigree","currency":"INR","id":"20","amount":"300","totalAmount":0.0}
+.13:18:29.428 - [ApiCaller] INFO  : Response:
+HTTP/1.1 200 
+H{"id":20,"name":"Pedigree","amount":300,"quantity":1,"currency":"INR"}
